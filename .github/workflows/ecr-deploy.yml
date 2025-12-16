@@ -32,9 +32,9 @@ jobs:
       - name: Tag image
         run: |
           docker tag springboot-app:latest \
-          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-east-1.amazonaws.com/springboot-app:latest
+          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-east-1.amazonaws.com/mohan/springbooot-docker-hello-world:latest
 
       - name: Push image
         run: |
           docker push \
-          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-east-1.amazonaws.com/springboot-app:latest
+          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-east-1.amazonaws.com/mohan/springbooot-docker-hello-world:latest
